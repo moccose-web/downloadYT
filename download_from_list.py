@@ -11,13 +11,11 @@ def main(type):
 
     if 0 == len(URLS):
         return
-    
+
     with YoutubeDL(opts) as ydl:
         error_code = ydl.download(URLS)
         print(error_code)
 
-    os.system("pause")
-    
 def load_urls():
     urls = []
     with open('urls.txt') as f:

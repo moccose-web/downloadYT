@@ -1,7 +1,9 @@
 # dir
 venv/
+output/
 
 # file
 *.code-workspace
 audios/*
 videos/*
+*.exe
