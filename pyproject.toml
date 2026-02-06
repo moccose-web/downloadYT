@@ -1,0 +1,38 @@
+[project]
+name = "download-yt"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "altgraph==0.17.4",
+    "auto-py-to-exe==2.42.0",
+    "bottle==0.12.25",
+    "bottle-websocket==0.2.9",
+    "brotli==1.0.9",
+    "certifi==2022.9.24",
+    "cffi==1.16.0",
+    "charset-normalizer==3.3.2",
+    "eel==0.16.0",
+    "future==1.0.0",
+    "gevent==24.2.1",
+    "gevent-websocket==0.10.1",
+    "greenlet==3.0.3",
+    "idna==3.6",
+    "mutagen==1.46.0",
+    "packaging==23.2",
+    "pefile==2023.2.7",
+    "pycparser==2.21",
+    "pycryptodomex==3.15.0",
+    "pyinstaller==6.4.0",
+    "pyinstaller-hooks-contrib==2024.1",
+    "pyparsing==3.1.1",
+    "pywin32-ctypes==0.2.2",
+    "requests==2.31.0",
+    "urllib3==2.2.1",
+    "websockets==12.0",
+    "whichcraft==0.6.1",
+    "yt-dlp>=2025.4.30",
+    "zope-event==5.0",
+    "zope-interface==6.2",
+]

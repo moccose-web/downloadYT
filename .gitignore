@@ -1,9 +1,11 @@
 # dir
-venv/
+.venv/
 output/
 
 # file
 *.code-workspace
 audios/*
 videos/*
+urls.txt
 *.exe
+区切り文字.txt
