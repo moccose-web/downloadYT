@@ -2,6 +2,7 @@
 
 import os
 import sys
+
 from yt_dlp import YoutubeDL
 
 
@@ -35,13 +36,19 @@ def edit_opts(type):
                 'preferredcodec': 'm4a',
             }]
         }
-        opts['outtmpl'] = os.getcwd() +'\\audios\%(title)s.%(ext)s'
-    elif 'video' == 'type':
-        opts = {'format': 'best'}
-        opts['outtmpl'] = os.getcwd() +'\\videos\%(title)s.%(ext)s'
+        opts['outtmpl'] = os.getcwd() +'\\audios\\%(title)s.%(ext)s'
+    elif 'video' == type:
+        opts = {
+            'format': 'bestvideo+bestaudio/best',
+            'js_runtimes': {"quickjs": {}}
+        }
+        opts['outtmpl'] = os.getcwd() +'\\videos\\%(title)s.%(ext)s'
     else:
-        opts = {'format': 'best'}
-        opts['outtmpl'] = os.getcwd() +'\\videos\%(title)s.%(ext)s'
+        opts = {
+            'format': 'bestvideo+bestaudio/best',
+            'js_runtimes': {"quickjs": {}}
+        }
+        opts['outtmpl'] = os.getcwd() +'\\videos\\%(title)s.%(ext)s'
 
     return opts
 
